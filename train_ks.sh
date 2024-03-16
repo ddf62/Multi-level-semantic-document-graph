@@ -1,0 +1,25 @@
+python main.py \
+    --bert_path ./data/model/bert-base-uncased \
+    --gpt_path ./data/model/gpt2 \
+    --epoch 5 \
+    --is_ks True \
+    --train_ks True \
+    --test_ks True\
+    --train_gpt False \
+    --test_gpt False \
+    --add_word_loss True \
+    --random_word_mask 0 \
+    --train_batch_size 1 \
+    --valid_batch_size 2 \
+    --num_workers 2 \
+    --max_ent_node 500 \
+    --seed 42 \
+    --nheads 3 \
+    --hidden_dim 128 \
+    --dataset wow \
+    --data_dir ./data \
+    --output_path ./outputs/wow \
+    --device cuda \
+    --visible_cuda 1 \
+    --version v2 \
+    --log_file True
